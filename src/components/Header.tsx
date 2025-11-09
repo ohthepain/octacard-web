@@ -9,14 +9,12 @@ const Header = () => {
           <span className="text-xl font-bold text-foreground">Octacard</span>
         </Link>
         <nav className="flex items-center space-x-6">
-          <a 
-            href="https://support.octacard.live" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <Link 
+            to="/support"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Support
-          </a>
+          </Link>
           <a 
             href="https://github.com/ohthepain/octacard/issues" 
             target="_blank" 
@@ -24,6 +22,14 @@ const Header = () => {
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Report Issue
+          </a>
+          <a 
+            href="https://github.com/ohthepain/octacard-web" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            GitHub
           </a>
           <Button asChild>
             <a href="#download">Download</a>
